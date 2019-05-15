@@ -100,15 +100,38 @@
   color: grey;
   cursor: pointer;
   transform: translate(-50%);
-  background-color: white;
+  background-color: #C2B97F;
 }
 .article-open {
-  height: 400px;
+  animation-name: expand;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.article--close {
+  animation-name: close;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes expand {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 300px;
+  }
+}
+@keyframes close {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 50px;
+  }
 }
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
-  background-color: #fffef7;
+  background-color: #F2F7F2;
 }

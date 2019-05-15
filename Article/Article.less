@@ -53,14 +53,22 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes expand{
+@keyframes expand {
+  from {
+    height: 50px;
+  }
+
   to {
-    height: 600px;
+    height: 300px;
 
   }
 }
 
-@keyframes close{
+@keyframes close {
+  from {
+    height: 300px;
+  }
+
   to {
     height: 50px;
   }

@@ -6,9 +6,9 @@ window.addEventListener('click', function() {
 const toggleMenu = () => {
   // Toggle the "menu--open" class on your menu refence. 
   menu.classList.toggle('menu--open');
-  TweenMax.to('.menu', 1, {x: 100});
+  TweenMax.fromTo('.menu', 4, {x: 100}, {x: 0});
 }
-// TweenMax.to('.menu', 1, {x: 100});
+
 
 // Start Here: Create a reference to the ".menu" class
 const menu = document.querySelector('.menu');
