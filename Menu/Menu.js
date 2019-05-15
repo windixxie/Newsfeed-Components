@@ -1,11 +1,12 @@
 
-// window.addEventListener('click', function() {
-//   TweenMax.to('.menu', 2, { x: -100 });
-// });
+window.addEventListener('click', function() {
+  TweenMax.to('.menu', 2, { x: -100 });
+});
 
 const toggleMenu = () => {
   // Toggle the "menu--open" class on your menu refence. 
   menu.classList.toggle('menu--open');
+  TweenMax.to('.menu', 1, {x: 100});
 }
 // TweenMax.to('.menu', 1, {x: 100});
 
